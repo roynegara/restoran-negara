@@ -1,0 +1,665 @@
+/* ========== Scroll Start ========== */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: green;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+/* ========== Scroll End ========== */
+
+/* ========== Setting Page Start ========== */
+* {
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+/* ========== Setting Page End ========== */
+
+/* ========== Nav Start ========== */
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  color: white;
+  border-radius: 25px;
+  margin-top: 5px;
+  z-index: 1000;
+  width: 100%;
+  position: fixed;
+}
+
+header.scrolled {
+  background-color: #000;
+  box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  padding-left: 18px;
+  padding-top: 9px;
+  justify-content: center;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list li a:hover {
+  text-decoration: underline #fff 4px;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger i {
+  font-size: 25px;
+  color: #cecece;
+}
+.hamburger i:hover {
+  font-size: 25px;
+  color: #fff;
+}
+
+/* icon */
+.negara {
+  color: green;
+}
+
+/* dropdown */
+.drop-down li {
+  list-style: none;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.drop-down {
+  position: absolute;
+  padding: 5px 5px;
+  margin: 20px 5px 5px 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.membership:hover .drop-down {
+  display: block;
+}
+
+.membership {
+  display: flex;
+}
+
+.membership .dropdown-icon {
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out all;
+}
+
+.drop-down li:hover {
+  background: green;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+/* ========== Nav End ========== */
+
+/* ========== Carousel Start ========== */
+.carousel h1 {
+  font-size: 200px;
+  text-align: center;
+  background: transparent;
+}
+.carousel p {
+  text-align: center;
+  font-size: 25px;
+  background-color: transparent;
+}
+.carousel img {
+  height: 100vh;
+  object-fit: cover;
+}
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-text-main {
+  font-size: 200px;
+  text-shadow: 8px 2px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #fff;
+  margin-top: 250px;
+}
+.carousel-text-sekunder {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 8px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.button-previous:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.button-next:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* ========== Carousel End ========== */
+
+/* ========== Selamat Datang Start ========== */
+
+.welcome-h1 {
+  padding: 0;
+  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+.div-welcome-all {
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.img-welcome-div {
+  padding-top: 16px;
+  border-radius: 10px;
+}
+
+.img-welcome {
+  box-shadow: 1px 1px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 320px;
+  object-fit: cover;
+  /* padding: 5px; */
+  /* padding: 15px; */
+}
+
+.txt-welcome {
+  box-shadow: 1px 1px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  padding: 15px;
+}
+/* ========== Selamat Datang End ========== */
+
+/* ========== Servis Pemesanan 3 kolom 1 baris Start ========== */
+.servis-txt {
+  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+.servis div {
+  box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  padding-top: 20px;
+}
+/* ========== Servis Pemesanan 3 kolon 1 baris End ========== */
+
+/* ========== Lokasi Start ========== */
+.location-h1 {
+  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.location {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 300px;
+}
+
+.item {
+  box-shadow: 4px 4px 5px 5px rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.lokasi-restoran {
+  color: #969696;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.no-telpon {
+  color: green;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.maps {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+}
+
+.maps iframe {
+  border-radius: 8px;
+  box-shadow: 0px 1px 5px 8px rgba(0, 0, 0, 0.1);
+}
+/* ========== Lokasi End ========== */
+
+/* ========== Menu Start ========== */
+.menu-head h1 {
+  font-weight: 600;
+  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-head h3 {
+  color: #6f6f6f;
+}
+
+.menu-body {
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  /* border: 1px solid #000; */
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-item img {
+  max-width: 100%;
+  width: 45vh;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item img:hover {
+  transform: scale(1.02);
+}
+
+.menu-item p {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin-left: 18px;
+}
+
+.menu-item button {
+  background: green;
+  margin-top: 3px;
+  margin-right: 3px;
+  height: 49px;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-item button:hover {
+  transform: scale(1.02);
+  background: #6f6f6f;
+  color: #cecece;
+}
+
+.menu-txt {
+  display: flex;
+  color: #6f6f6f;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 50px;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.menu-harga {
+  position: absolute;
+  transform: translate(9%, -120%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+/* ========== Menu End ========== */
+
+/* ========== Cabang Start ========== */
+.cabang-head h1 {
+  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.cabang-head h3 {
+  color: #6f6f6f;
+}
+
+.slick-carousel {
+  width: 80%;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-slider {
+  padding: 10px;
+  margin: 8px;
+  text-align: center;
+  border: 1px solid green;
+  border-radius: 9px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-slider:hover {
+  transform: scale(1.02);
+}
+
+.card-slider img {
+  max-width: 100%;
+  width: 45vh;
+  height: 25vh;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-slider img:hover {
+  transform: scale(1.02);
+}
+
+.card-slider span {
+  color: #6f6f6f;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  width: 100%;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+.card-slider span {
+  transform: scale(1.02);
+}
+/* ========== Cabang End ========== */
+
+/* ========== Footer Start ========== */
+footer {
+  margin-top: 40px;
+}
+.footer-btn {
+  margin-top: 1vh;
+  background-color: green;
+  color: #fff;
+  height: 5vh;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-btn:hover {
+  background-color: grey;
+  color: #fff;
+  transform: scale(1.01);
+}
+
+.kolom-tengah {
+  color: green;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.kolom-tengah:hover {
+  color: rgb(0, 102, 0);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ========== feedback dan brosur Start ========== */
+.feedback {
+  color: green;
+  padding-top: 30px;
+}
+
+.feedback:hover {
+  color: #cecece;
+}
+
+.brosur {
+  color: green;
+}
+
+.brosur:hover {
+  color: #cecece;
+}
+/* ========== feedback dan brosur End ========== */
+
+/* ========== Footer End ========== */
+
+/* ========== Modal Start ========== */
+.modal-header {
+  color: #6f6f6f;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-txt {
+  color: #6f6f6f;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer-modal {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-close button {
+  color: #fff;
+  background-color: green;
+  border: none;
+}
+
+.modal-close button:hover {
+  color: #cecece;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* ========== Modal End ========== */
+
+/* ========== Media ========== */
+
+@media only screen and (max-width: 1123px) {
+  .carousel-text-main {
+    font-size: 170px;
+    text-shadow: 8px 2px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #fff;
+    margin-top: 150px;
+  }
+
+  .carousel-text-sekunder {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 8px 2px 15px rgba(0, 0, 0, 0.4);
+    margin-top: 25px;
+  }
+  /* menu */
+  .menu-head {
+    margin-top: 40px;
+  }
+
+  /* Cabang */
+  .cabang-head {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .carousel-text-main {
+    font-size: 150px;
+    text-shadow: 8px 2px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #fff;
+    margin-top: 250px;
+  }
+
+  .carousel-text-sekunder {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 8px 2px 15px rgba(0, 0, 0, 0.4);
+    margin-top: 25px;
+  }
+  
+  .maps {
+    margin-top: 40px;
+  }
+
+  /* menu */
+  .menu-head {
+    margin-top: 25px;
+  }
+
+  /* Cabang */
+  .cabang-head {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .logo {
+    padding-left: 25px;
+  }
+
+  .nav-list.show {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-list li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    padding-right: 25px;
+  }
+
+  /* Untuk carousel */
+  .carousel-text-main {
+    font-size: 80px;
+    text-shadow: 8px 2px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #fff;
+    margin-top: 250px;
+  }
+  .carousel-text-sekunder {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    text-shadow: 8px 2px 15px rgba(0, 0, 0, 0.4);
+    margin-top: 25px;
+  }
+  /* lokasi */
+  .location {
+    display: block;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    height: 300px;
+  }
+
+  /* maps */
+  .maps {
+    margin-top: 250px;
+  }
+
+  .maps iframe {
+    border-radius: 8px;
+    box-shadow: 0px 1px 5px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* menu */
+  .menu-head {
+    margin-top: 25px;
+  }
+  .menu-item img {
+    max-width: 100%;
+    width: 60vh;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Cabang */
+  .cabang-head {
+    margin-top: 25px;
+  }
+}
